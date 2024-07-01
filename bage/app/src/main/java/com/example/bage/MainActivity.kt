@@ -28,15 +28,15 @@ class MainActivity : AppCompatActivity() {
         setupButton()
         setRandomValueBetweenOneToHundred()
         setJobAndLaunch()
-    }
-    private fun setupButton(){
-        val button=findViewById<Button>(R.id.clickButton)
+    }    
+    private fun setupButton() {
+        val button = findViewById<Button>(R.id.clickButton)
 
         button.setOnClickListener {
             job?.cancel()
             checkAnswerAndShowToast()
         }
-            }
+    }
 
     private fun setRandomValueBetweenOneToHundred(){
         val random=findViewById<TextView>(R.id.RandeomText)
